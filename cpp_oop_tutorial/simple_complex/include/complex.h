@@ -3,6 +3,9 @@
 
 #include <iostream>
 
+namespace simple
+{
+
 class complex
 {
 private:
@@ -15,12 +18,14 @@ public:
 
     double real() const {return re;};
     double imag() const {return im;};
-    ~complex();
+    ~complex(){};
 };
 
 complex operator + (const complex& x, const complex& y);
 complex operator - (const complex& x, const complex& y);
 
 std::ostream& operator << (std::ostream& os, const complex& x);
+
+}
 
 #endif

@@ -1,4 +1,7 @@
-#include <SimpleComplex/include/complex.h>
+#include <include/complex.h>
+
+namespace simple
+{
 
 complex& __doapl(complex* ths, const complex& r)
 {
@@ -6,7 +9,6 @@ complex& __doapl(complex* ths, const complex& r)
     ths->im += r.im;
     return *ths;
 }
-
 
 inline complex& complex::operator += (const complex& r)
 {
@@ -46,4 +48,6 @@ inline complex operator - (double x, const complex& y)
 std::ostream& operator << (std::ostream& os, const complex& x)
 {
     return os << '(' << x.real() << ',' << x.imag() << ')';
+}
+
 }
