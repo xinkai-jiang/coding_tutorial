@@ -8,8 +8,7 @@ complex& __doapl(complex* ths, const complex& r)
 }
 
 
-inline complex&
-complex::operator += (const complex& r)
+inline complex& complex::operator += (const complex& r)
 {
     return __doapl(this, r);
 }
