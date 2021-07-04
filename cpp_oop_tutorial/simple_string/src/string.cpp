@@ -34,15 +34,15 @@ string& string::operator=(const string& str)
     return *this;
 }
 
-
 string::~string()
 {
     delete[] m_data;
 }
 
-
-
+std::ostream& operator<<(std::ostream& os, const string& str)
+{
+    return os << str.get_c_str();
 }
 
 
-
+}
