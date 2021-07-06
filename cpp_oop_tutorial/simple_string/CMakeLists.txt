@@ -4,7 +4,7 @@ project(simple_string)
 
 include_directories(${PROJECT_SOURCE_DIR})
 
-add_library(simple_string src/string.cpp)
+add_library(simple_string SHARED src/string.cpp)
 
 add_executable(simple_string_test src/string_test.cpp)
 

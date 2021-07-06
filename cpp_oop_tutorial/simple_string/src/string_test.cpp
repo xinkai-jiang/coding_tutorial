@@ -2,6 +2,8 @@
 
 int main(int argc, char** argv)
 {
+    
     simple::string s1("Hello");
-    std::cout << s1 << std::endl;
+    simple::string s2("!");
+    std::cout << s1 << s2 << std::endl;
 }

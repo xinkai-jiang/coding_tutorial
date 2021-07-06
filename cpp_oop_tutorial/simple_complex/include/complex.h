@@ -1,5 +1,5 @@
-#ifndef __cOMPLEX__
-#define __cOMPLEX__
+#ifndef __SIMPLE_COMPLEX__
+#define __SIMPLE_COMPLEX__
 
 #include <iostream>
 

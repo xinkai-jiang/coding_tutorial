@@ -4,7 +4,7 @@ project(simple_complex)
 
 include_directories(${PROJECT_SOURCE_DIR})
 
-add_library(simple_complex src/complex.cpp)
+add_library(simple_complex SHARED src/complex.cpp)
 
 add_executable(simple_complex_test src/complex_test.cpp)
 
